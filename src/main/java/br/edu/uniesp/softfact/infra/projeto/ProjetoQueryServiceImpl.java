@@ -7,7 +7,7 @@ import br.edu.uniesp.softfact.infra.aluno.AlunoEntity;
 import br.edu.uniesp.softfact.zo.old.stack.StackTecnologia;
 import br.edu.uniesp.softfact.zo.old.stack.dto.StackResumo;
 import jakarta.persistence.EntityNotFoundException;
-import lombok.*;
+import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -48,12 +48,10 @@ public class ProjetoQueryServiceImpl implements ProjetoQueryService {
                 p.getNome(),
                 p.getDescricao(),
 
-                // ---------- ALUNOS ----------
                 p.getAlunos().stream()
                         .map(this::toAlunoResponse)
                         .collect(Collectors.toSet()),
 
-                // ---------- STACKS ----------
                 p.getStacks().stream()
                         .map(this::toStackResumo)
                         .collect(Collectors.toSet())

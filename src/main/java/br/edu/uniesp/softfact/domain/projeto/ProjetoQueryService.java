@@ -6,5 +6,6 @@ import org.springframework.data.domain.Pageable;
 
 public interface ProjetoQueryService {
     ProjetoResponse buscarPorId(Long id);
+
     Page<ProjetoResponse> listar(String termo, Pageable pageable);
 }

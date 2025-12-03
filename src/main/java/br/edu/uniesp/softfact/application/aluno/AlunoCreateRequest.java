@@ -16,4 +16,5 @@ public record AlunoCreateRequest(
         @NotBlank String matricula,
         @NotNull Periodo periodo,
         Set<Long> stacksIds
-) {}
+) {
+}
