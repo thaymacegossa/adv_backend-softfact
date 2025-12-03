@@ -4,7 +4,10 @@ import br.edu.uniesp.softfact.infra.aluno.AlunoEntity;
 import br.edu.uniesp.softfact.zo.old.stack.StackTecnologia;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.HashSet;
 import java.util.Set;
