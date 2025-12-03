@@ -1,0 +1,26 @@
+package br.edu.uniesp.softfact.application.mappers;
+
+import br.edu.uniesp.softfact.application.aluno.AlunoUpdateRequest;
+import br.edu.uniesp.softfact.domain.aluno.Aluno;
+import javax.annotation.processing.Generated;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2025-12-02T17:06:56-0300",
+    comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.6 (Amazon.com Inc.)"
+)
+@Component
+public class AlunoUpdateMapperImpl implements AlunoUpdateMapper {
+
+    @Override
+    public Aluno toDomain(AlunoUpdateRequest request) {
+        if ( request == null ) {
+            return null;
+        }
+
+        Aluno aluno = new Aluno();
+
+        return aluno;
+    }
+}
