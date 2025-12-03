@@ -6,5 +6,6 @@ import org.springframework.data.domain.Pageable;
 
 public interface AlunoQueryService {
     AlunoResponse buscarPorId(Long id);
+
     Page<AlunoResponse> listar(String termo, Pageable pageable);
 }

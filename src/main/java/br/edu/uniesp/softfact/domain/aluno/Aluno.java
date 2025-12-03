@@ -4,17 +4,16 @@ import br.edu.uniesp.softfact.shared.enums.Curso;
 import br.edu.uniesp.softfact.shared.enums.Periodo;
 import br.edu.uniesp.softfact.zo.old.certificado.Certificado;
 import br.edu.uniesp.softfact.zo.old.stack.StackTecnologia;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
 
-@Getter @Setter
-@NoArgsConstructor @AllArgsConstructor @Builder
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Aluno {
 
     private Long id;

@@ -12,17 +12,21 @@ import lombok.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Getter @Setter
+@Getter
+@Setter
 @Entity
 @Table(name = "tb_softfact_aluno",
         uniqueConstraints = {
                 @UniqueConstraint(name = "uk_aluno_email", columnNames = "email"),
                 @UniqueConstraint(name = "uk_aluno_matricula", columnNames = "matricula")
         })
-@NoArgsConstructor @AllArgsConstructor @Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class AlunoEntity {
 
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank

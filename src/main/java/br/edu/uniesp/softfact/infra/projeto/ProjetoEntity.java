@@ -5,11 +5,11 @@ import br.edu.uniesp.softfact.zo.old.stack.StackTecnologia;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
+
 import java.util.HashSet;
 import java.util.Set;
 
-@Getter
-@Setter
+@Data
 @Entity
 @Table(name = "tb_softfact_projeto")
 @NoArgsConstructor
