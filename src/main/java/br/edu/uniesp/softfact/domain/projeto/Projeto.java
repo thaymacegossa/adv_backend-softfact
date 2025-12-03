@@ -2,7 +2,10 @@ package br.edu.uniesp.softfact.domain.projeto;
 
 import br.edu.uniesp.softfact.domain.aluno.Aluno;
 import br.edu.uniesp.softfact.zo.old.stack.StackTecnologia;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.HashSet;
 import java.util.Set;
