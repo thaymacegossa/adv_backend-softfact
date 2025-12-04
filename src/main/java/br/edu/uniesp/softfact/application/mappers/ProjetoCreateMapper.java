@@ -7,8 +7,5 @@ import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
 public interface ProjetoCreateMapper {
-
-    @Mapping(target = "alunos", ignore = true)
-    @Mapping(target = "stacks", ignore = true)
     Projeto toDomain(ProjetoCreateRequest request);
 }

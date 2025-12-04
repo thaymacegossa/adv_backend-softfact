@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-12-02T17:06:56-0300",
-    comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.6 (Amazon.com Inc.)"
+    date = "2025-12-03T22:48:29-0300",
+    comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.9 (Amazon.com Inc.)"
 )
 @Component
 public class AlunoEntityMapperImpl implements AlunoEntityMapper {
@@ -42,9 +42,9 @@ public class AlunoEntityMapperImpl implements AlunoEntityMapper {
         Curso curso = null;
         String matricula = null;
         Periodo periodo = null;
-        Set<StackResumo> stacks = null;
+        Set<StackResumo> stacksId = null;
 
-        AlunoResponse alunoResponse = new AlunoResponse( id, nome, email, telefone, curso, matricula, periodo, stacks );
+        AlunoResponse alunoResponse = new AlunoResponse( id, nome, email, telefone, curso, matricula, periodo, stacksId );
 
         return alunoResponse;
     }

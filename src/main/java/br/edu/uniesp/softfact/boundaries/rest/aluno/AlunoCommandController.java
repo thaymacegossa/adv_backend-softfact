@@ -7,6 +7,7 @@ import br.edu.uniesp.softfact.application.mappers.AlunoCreateMapper;
 import br.edu.uniesp.softfact.application.mappers.AlunoUpdateMapper;
 import br.edu.uniesp.softfact.domain.aluno.UpdateAlunoService;
 import jakarta.validation.Valid;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

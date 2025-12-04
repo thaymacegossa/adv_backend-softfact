@@ -14,11 +14,8 @@ import java.util.stream.Collectors;
 @Mapper(componentModel = "spring")
 public interface AlunoEntityMapper {
 
-    @Mapping(target = "stacks", ignore = true)
-    @Mapping(target = "certificados", ignore = true)
     AlunoEntity toEntity(Aluno dto);
 
-    @Mapping(target = "stacksIds", source = "stacks", qualifiedByName = "mapStacksIds")
     AlunoResponse toResponse(AlunoEntity entity);
 
     @Named("mapStacksIds")

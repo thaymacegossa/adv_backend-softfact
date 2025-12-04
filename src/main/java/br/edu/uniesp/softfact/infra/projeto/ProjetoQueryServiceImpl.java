@@ -67,10 +67,9 @@ public class ProjetoQueryServiceImpl implements ProjetoQueryService {
                 a.getCurso(),
                 a.getMatricula(),
                 a.getPeriodo(),
-                a.getStacks() == null ? Set.of() :
-                        a.getStacks().stream()
-                                .map(StackTecnologia::getId)
-                                .collect(Collectors.toSet())
+                a.getStacks().stream()
+                        .map(s -> new StackResumo(s.getId(), s.getNome(), s.getCategoria()))
+                        .collect(Collectors.toSet())
         );
     }
 
